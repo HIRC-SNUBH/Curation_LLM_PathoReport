@@ -16,7 +16,21 @@ This repository provides *Training/Evaluation code* and *Trained model* presente
 You can see our paper at 
 [Not determined](https://google.com).
 
+## Requirements
+
+---
+> - transformer >= 4.34.0
+> - torch >= 2.0.1
+> - peft >= 0.4.0
+> - vllm >= 0.2.1.post1
+
+## Getting Started
+
+---
+Test
+
 ## Abstract
+
 > This paper ~
 
 
