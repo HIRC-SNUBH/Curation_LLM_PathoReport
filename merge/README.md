@@ -6,7 +6,7 @@
 
 Example of merging code
 
-# Example
+## Example
 You can merge the fine-tuned LoRA adapter with a Pre-trained model by modifying the shell script below.
 
 ```{shell}

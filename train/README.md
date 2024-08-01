@@ -6,7 +6,7 @@
 
 Example of fine-tuning code
 
-# Example
+## Example
 You can fine-tune the pre-trained model by modifying the shell script below.
 
 ```{shell}
