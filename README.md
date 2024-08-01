@@ -16,18 +16,26 @@ This repository provides *Training/Evaluation code* and *Trained model* presente
 You can see our paper at 
 [Not determined](https://google.com).
 
-## Requirements
 
----
+## Requirements
 > - transformer >= 4.34.0
 > - torch >= 2.0.1
 > - peft >= 0.4.0
 > - vllm >= 0.2.1.post1
 
 ## Getting Started
+ToDo.
 
----
-Test
+## Model
+You can download the LoRA Adaptor of trained models.
+
+| Trained Model                                                                    | Base Model                                                                                      | Size   |
+|----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|--------|
+| [<div align="center"> PathoIE-Llama-2-7B <br> (Llama-2-7B) </div>]()             | [Llama-2-7B](https://huggingface.co/meta-llama/Llama-2-7b-hf)                                   | 0.9 GB |
+| [<div align="center"> PathoIE-Mistral-7B <br> (Mistral-7B) </div>]()             | [Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-v0.1)                                  | 0.9 GB |
+| [<div align="center"> PathoIE-Llama-2-7B <br> (Deductive Llama-2-7B) </div>]()   | [Orca-2-7B](https://huggingface.co/microsoft/Orca-2-7b)                                         | 2.3 GB |
+| [<div align="center"> * PathoIE-Mistral-7B <br> (Deductive Mistral-7B) </div>]() | [Dolphin-2.1-Mistral-7B](https://huggingface.co/cognitivecomputations/dolphin-2.1-mistral-7b)   | 2.3 GB |
+
 
 ## Abstract
 
