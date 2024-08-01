@@ -11,7 +11,7 @@
 </div>
 
 This repository provides *Training/Evaluation code* and *Trained model* presented in our paper
-Extracting lung cancer staging descriptors from pathology reports: a generative language model approach
+"Extracting lung cancer staging descriptors from pathology reports: a generative language model approach"
 
 You can see our paper at 
 [Not determined](https://google.com).
@@ -20,7 +20,8 @@ You can see our paper at
 > This paper ~
 
 
-### Citation   
+### Citation
+```
 @article{cho2024ie,
     title={Extracting lung cancer staging descriptors from pathology reports: a generative language model approach},
     author={Hyeongmin Cho and Sooyoung Yoo and Borham Kim and Sowon Jang and Leonard Sunwoo and Sanghwan Kim and Donghyoung Lee and Seok Kim and Sejin Nam and Jin-Haeng Chung},
@@ -33,3 +34,4 @@ You can see our paper at
     doi={},
     url={}
 }
+```
