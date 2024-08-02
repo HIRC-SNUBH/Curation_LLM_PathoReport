@@ -14,7 +14,7 @@ python3 eval.py --result_path 'PATH_TO_GENERATION_RESULTS' \
 --output_dir 'SAVE_PATH'
 ```
 - result_path
-  - "The file path where the generated results from the model are stored."
+  - The file path where the generated results from the model are stored
 - output_dir
   - Used for setting the save path
 
