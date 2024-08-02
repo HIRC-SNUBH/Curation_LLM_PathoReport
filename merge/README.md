@@ -9,7 +9,7 @@ Example of merging code
 ## Example
 You can merge the fine-tuned LoRA adapter with a Pre-trained model by modifying the shell script below.
 
-```{shell}
+``` shell
 python3 merge.py --model_path '/Llama-2-7b-hf' \
 --adapter_path '../train/adapters/project/checkpoint-1000' \
 --output_dir './models/PathoIE-1000step' \

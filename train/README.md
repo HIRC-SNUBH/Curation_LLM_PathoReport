@@ -9,7 +9,7 @@ Example of fine-tuning code
 ## Example
 You can fine-tune the pre-trained model by modifying the shell script below.
 
-```{shell}
+``` shell
 python3 finetune_llm.py --dataset_path "./train_dataset.jsonl" \
 --model_path "/Llama-2-7b-hf" \
 --project "fine-tune-ie" \

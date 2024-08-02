@@ -24,7 +24,35 @@ You can see our paper at
 > - vllm >= 0.2.1.post1
 
 ## Getting Started
-ToDo.
+``` python
+from datasets import load_dataset
+from transformers import AutoTokenizer, AutoModelForCausalLM
+from peft import PeftModel
+
+# Load base model
+base_model = AutoModelForCausalLM.from_pretrained(
+    'cognitivecomputations/dolphin-2.1-mistral-7b',
+    trust_remote_code=True,
+    device_map="auto",
+    torch_dtype=torch.bfloat16,   # Optional, if you have insufficient VRAM, lower the precision.
+)
+
+# Load tokenizer
+tokenizer = AutoTokenizer.from_pretrained('cognitivecomputations/dolphin-2.1-mistral-7b')
+
+# Load PEFT
+model = PeftModel.from_pretrained(base_model, 'Lowenzahn/PathoIE-Dolphin-7B')
+model = model.merge_and_unload()
+model = model.eval()
+
+# Inference
+prompts = ["Machine learning is"]
+inputs = tokenizer(prompts, return_tensors="pt")
+gen_kwargs = {"max_new_tokens": 1024, "top_p": 0.8, "temperature": 0.0, "do_sample": False, "repetition_penalty": 1.0}
+output = model.generate(inputs['input_ids'], **gen_kwargs)
+output = tokenizer.decode(output[0].tolist(), skip_special_tokens=True)
+print(output)
+```
 
 ## Model
 You can download the LoRA Adaptor of trained models.
@@ -35,11 +63,6 @@ You can download the LoRA Adaptor of trained models.
 | [<div align="center"> PathoIE-Mistral-7B <br> (Mistral-7B) </div>](https://huggingface.co/Lowenzahn/PathoIE-Mistral-7B)             | [Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-v0.1)                                  | 1.4 GB |
 | [<div align="center"> PathoIE-Orca-2-7B <br> (Deductive Llama-2-7B) </div>](https://huggingface.co/Lowenzahn/PathoIE-Orca-2-7B)     | [Orca-2-7B](https://huggingface.co/microsoft/Orca-2-7b)                                         | 0.4 GB |
 | [<div align="center"> * PathoIE-Dolphin-7B <br> (Deductive Mistral-7B) </div>](https://huggingface.co/Lowenzahn/PathoIE-Dolphin-7B) | [Dolphin-2.1-Mistral-7B](https://huggingface.co/cognitivecomputations/dolphin-2.1-mistral-7b)   | 0.4 GB |
-
-
-## Abstract
-
-> This paper ~
 
 
 ### Citation

@@ -10,8 +10,6 @@ from datasets import load_dataset, Dataset
 from peft import prepare_model_for_int8_training, LoraConfig, get_peft_model
 from accelerate import FullyShardedDataParallelPlugin, Accelerator
 from torch.distributed.fsdp.fully_sharded_data_parallel import FullOptimStateDictConfig, FullStateDictConfig
-from utils import save_data, load_data
-from typing import List, Union, Dict, Any, Union
 
 def formatting_func(example) -> str:
     text = f"{example['input']}{example['output']}"
