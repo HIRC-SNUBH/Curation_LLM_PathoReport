@@ -13,9 +13,6 @@
 This repository provides *Training/Evaluation code* and *Trained model* presented in our paper
 "Extracting lung cancer staging descriptors from pathology reports: a generative language model approach"
 
-You can see our paper at 
-[Not determined]().
-
 
 ## Requirements
 > - transformer >= 4.34.0

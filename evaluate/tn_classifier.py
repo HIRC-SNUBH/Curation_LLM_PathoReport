@@ -2,7 +2,7 @@ import re
 
 class StageClassifier:
     def __init__(self):
-        # Regex needed for T-stage
+        # T4 stage condition
         self.MUCINOUS_REGEX = r'(?<!non-)\bmucinous\b'  # lookbehind
         self.INSITU_REGEX = r'(in situ)'
         self.SEPARATE_NODULE_REGEX = r'()'
