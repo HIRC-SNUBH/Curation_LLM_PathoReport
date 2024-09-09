@@ -2,10 +2,10 @@
  
 # Extracting lung cancer staging descriptors from pathology reports: a generative language model approach     
 
-[![DOI](https://img.shields.io/badge/UnderReview-red)](https://google.com)
-[![Pages](https://img.shields.io/badge/UnderReview-blue)](https://google.com)
-[![Volume](https://img.shields.io/badge/UnderReview-green)](https://google.com)
-[![Journal](https://img.shields.io/badge/UnderReview-purple)](https://google.com)
+[![DOI](https://img.shields.io/badge/DOI-10.1016/j.jbi.2024.104720-red)](https://doi.org/10.1016/j.jbi.2024.104720)
+[![Volume](https://img.shields.io/badge/Volume-157-blue)](https://www.sciencedirect.com/science/article/pii/S1532046424001382)
+[![Journal](https://img.shields.io/badge/Journal-JBI-purple)](https://www.sciencedirect.com/journal/journal-of-biomedical-informatics)
+[![ISSN](https://img.shields.io/badge/ISSN-1532_0464-green)](https://www.sciencedirect.com/science/article/pii/S1532046424001382)
 
    
 </div>
@@ -54,26 +54,25 @@ print(output)
 ## Model
 You can download the LoRA Adaptor of trained models.
 
-| Trained Model                                                                                                                       | Base Model                                                                                      | Size   |
-|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|--------|
-| [<div align="center"> PathoIE-Llama-2-7B <br> (Llama-2-7B) </div>](https://huggingface.co/Lowenzahn/PathoIE-Llama-2-7B)             | [Llama-2-7B](https://huggingface.co/meta-llama/Llama-2-7b-hf)                                   | 1.4 GB |
-| [<div align="center"> PathoIE-Mistral-7B <br> (Mistral-7B) </div>](https://huggingface.co/Lowenzahn/PathoIE-Mistral-7B)             | [Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-v0.1)                                  | 1.4 GB |
-| [<div align="center"> PathoIE-Orca-2-7B <br> (Deductive Llama-2-7B) </div>](https://huggingface.co/Lowenzahn/PathoIE-Orca-2-7B)     | [Orca-2-7B](https://huggingface.co/microsoft/Orca-2-7b)                                         | 0.4 GB |
-| [<div align="center"> * PathoIE-Dolphin-7B <br> (Deductive Mistral-7B) </div>](https://huggingface.co/Lowenzahn/PathoIE-Dolphin-7B) | [Dolphin-2.1-Mistral-7B](https://huggingface.co/cognitivecomputations/dolphin-2.1-mistral-7b)   | 0.4 GB |
+| Trained Model                                                                                                                       | Base Model                                                                                      |
+|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| [<div align="center"> PathoIE-Llama-2-7B <br> (Llama-2-7B) </div>](https://huggingface.co/Lowenzahn/PathoIE-Llama-2-7B)             | [Llama-2-7B](https://huggingface.co/meta-llama/Llama-2-7b-hf)                                   |
+| [<div align="center"> PathoIE-Mistral-7B <br> (Mistral-7B) </div>](https://huggingface.co/Lowenzahn/PathoIE-Mistral-7B)             | [Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-v0.1)                                  |
+| [<div align="center"> PathoIE-Orca-2-7B <br> (Deductive Llama-2-7B) </div>](https://huggingface.co/Lowenzahn/PathoIE-Orca-2-7B)     | [Orca-2-7B](https://huggingface.co/microsoft/Orca-2-7b)                                         |
+| [<div align="center"> * PathoIE-Dolphin-7B <br> (Deductive Mistral-7B) </div>](https://huggingface.co/Lowenzahn/PathoIE-Dolphin-7B) | [Dolphin-2.1-Mistral-7B](https://huggingface.co/cognitivecomputations/dolphin-2.1-mistral-7b)   |
 
 
 ### Citation
 ```
 @article{cho2024ie,
     title={Extracting lung cancer staging descriptors from pathology reports: a generative language model approach},
-    author={Hyeongmin Cho and Sooyoung Yoo and Borham Kim and Sowon Jang and Leonard Sunwoo and Sanghwan Kim and Donghyoung Lee and Seok Kim and Sejin Nam and Jin-Haeng Chung},
-    journal={},
-    volume={},
-    pages={},
-    year={},
-    publisher={},
-    issn={},
-    doi={},
-    url={}
+    author={Hyeongmin Cho, Sooyoung Yoo, Borham Kim, Sowon Jang, Leonard Sunwoo, Sanghwan Kim, Donghyoung Lee, Seok Kim, Sejin Nam, Jin-Haeng Chung},
+    journal={Journal of Biomedical Informatics},
+    volume={157},
+    year={2024},
+    publisher={Elsevier},
+    issn={1532-0464},
+    doi={10.1016/j.jbi.2024.104720},
+    url={https://doi.org/10.1016/j.jbi.2024.104720}
 }
 ```
