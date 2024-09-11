@@ -20,6 +20,7 @@ python3 eval.py --result_path 'PATH_TO_GENERATION_RESULTS' \
 
 ## Saving results
 You should save the generated results as follows.
+Note that the generation does not include the instruction.
 
 ``` python
 from utils import save_data
